@@ -8,10 +8,8 @@ class TestCase5 {
 
 	@Test
 	void test5() {
-		String type="Scalene";
-		String type2=TriangleProblem.typeTriangle(274, 12, 97);
-		System.out.println(type2);
-		assertNotEquals("error",type,type2);
+		boolean in=TriangleProblem.checkInputs(274, 12, 97);
+		assertTrue(in);
 	}
 
 }

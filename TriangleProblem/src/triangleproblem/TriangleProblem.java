@@ -18,14 +18,12 @@ public class TriangleProblem {
     public static void main(String[] args) throws IOException{
       //DataInputStream stdin = new DataInputStream (System.in);
       BufferedReader stdin= new BufferedReader(new InputStreamReader(System.in));
-        boolean c1=false;
-        boolean c2=false;
-        boolean c3=false;
+        
         int a=1;
         int b=1;
         int c=1;
-  
-        while (!c1&!c2&!c3) {
+        boolean control=false;
+        while (!control) {
 
             // Sides of triangle.
             System.out.println ("\nEnter side1 length: ");
@@ -36,20 +34,8 @@ public class TriangleProblem {
 
             System.out.println ("Enter side3 length: ");
             c = Integer.parseInt (stdin.readLine());
-
-            c1=(1<=a)&(a<=200);
-            c2=(1<=b)&(b<=200);
-            c3=(1<=c)&(c<=200);
-
-            if (!c1){
-                System.out.println ("Value of a is not in the range of permitted values");
-            }
-            else if (!c2){
-                System.out.println ("Value of b is not in the range of permitted values");
-            }
-            else if (!c3){
-                System.out.println ("Value of c is not in the range of permitted values");
-            }
+            control=checkInputs(a,b,c);
+            
         }
         System.out.println ("Side a is ");
         System.out.println (a);
@@ -62,6 +48,27 @@ public class TriangleProblem {
         System.out.println(typeTriangle(a,b,c));
              
     }
+    
+    public static boolean checkInputs(int a,int b, int c) {
+    	boolean c1=false;
+        boolean c2=false;
+        boolean c3=false;
+    	c1=(1<=a)&(a<=200);
+        c2=(1<=b)&(b<=200);
+        c3=(1<=c)&(c<=200);
+
+        if (!c1){
+            System.out.println ("Value of a is not in the range of permitted values");
+        }
+        else if (!c2){
+            System.out.println ("Value of b is not in the range of permitted values");
+        }
+        else if (!c3){
+            System.out.println ("Value of c is not in the range of permitted values");
+        }
+        return c1&c2&c3;
+    }
+    
     public static String typeTriangle(int a, int b, int c) {
     	boolean tr=(a<b+c)&(b<a+c)&(c<a+b);
         System.out.println (tr);
