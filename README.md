@@ -1,23 +1,23 @@
 # Taller1_Software
 
-## Resumen
-  **Taller correspondiente al Primer Parcial de la materia de Ingenieria de Software II.**<br><br>
-  **Autores:** <br>
+## Detail
+  **Workshop corresponding to the First Partial of the subject of Software Engineering II.**<br><br>
+  **Authors:** <br>
   - AGUILAR MORA OSWALDO
   - BERMUDEZ MOREIRA KAREN
   - BERNAL MOREIRA GUILLERMO
   - ORTIZ HOLGUIN EDUARDO
   -	WONG PAVON HUGO
 
-  **Tutor:** Dr. Mera Carlos    &nbsp; &nbsp; &nbsp;&nbsp; **Paralelo #** 1<br>
+  **Tutor:** Dr. Mera Carlos    &nbsp; &nbsp; &nbsp;&nbsp; **Parallel #** 1<br>
   **Deadline:** 11/06/2020<br>
 
-## Estructura
-   + **Triangle Problem** -> Código
+## Structure
+   + **Triangle Problem** -> Code
    
-   + **Documentation** -> Reportes de trabajo
+   + **Documentation** -> Reports .pdf and .doc versions 
       <br>
 
-## Especificacion
-- Correr usando eclipse
-- Tener JUnit
+## Specification
+- Running using Eclipse 
+- Have JUnit
