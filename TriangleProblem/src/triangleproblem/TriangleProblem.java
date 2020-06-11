@@ -62,7 +62,7 @@ public class TriangleProblem {
         System.out.println(typeTriangle(a,b,c));
              
     }
-    private static String typeTriangle(int a, int b, int c) {
+    public static String typeTriangle(int a, int b, int c) {
     	boolean tr=(a<b+c)&(b<a+c)&(c<a+b);
         System.out.println (tr);
         String type="";

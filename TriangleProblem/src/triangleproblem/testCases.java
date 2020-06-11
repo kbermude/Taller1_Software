@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 class testCases {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void test1() {
+		String type="Isosceles";
+		assertEquals(type, TriangleProblem.typeTriangle(5, 5, 5));
 	}
-
 }
