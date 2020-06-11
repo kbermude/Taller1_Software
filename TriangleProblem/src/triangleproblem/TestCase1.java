@@ -12,12 +12,6 @@ class TestCase1 {
 		String type2=TriangleProblem.typeTriangle(5, 5, 5);
 		assertEquals(type,type2);
 	}
-	@Test
-	void test2() {
-		String type="Scalene";
-		String type2=TriangleProblem.typeTriangle(5, 3, 7);
-		assertEquals(type,type2);
-	}
 	
 	
 }
