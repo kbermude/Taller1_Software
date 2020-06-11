@@ -49,14 +49,18 @@ public class TriangleProblem {
              
     }
     
-    public static boolean checkInputs(Object a,Object b, Object c) {
+    //public static boolean checkInputs(Object a,Object b, Object c) {
+    	public static boolean checkInputs(int a,int b, int c) {
     	boolean c1=false;
         boolean c2=false;
         boolean c3=false;
-        try {
-    	c1=(1<=(Integer)a)&((Integer)a<=200);
-        c2=(1<=(Integer)b)&((Integer)b<=200);
-        c3=(1<=(Integer)c)&((Integer)c<=200);
+        //try {
+    	//c1=(1<=(Integer)a)&((Integer)a<=200);
+        //c2=(1<=(Integer)b)&((Integer)b<=200);
+        //c3=(1<=(Integer)c)&((Integer)c<=200);
+        c1=(1<=a)&(a<=200);
+        c2=(1<=b)&(b<=200);
+        c3=(1<=c)&(c<=200);
 
         if (!c1){
             System.out.println ("Value of a is not in the range of permitted values");
@@ -68,10 +72,10 @@ public class TriangleProblem {
             System.out.println ("Value of c is not in the range of permitted values");
         }
         return c1&c2&c3;
-        }catch(Exception e) {
-        	System.out.println("Values entered aren't valid");
-        }
-		return false;
+        //}catch(Exception e) {
+        //	System.out.println("Values entered aren't valid");
+        //}
+		//return false;
     }
     
     public static String typeTriangle(int a, int b, int c) {
