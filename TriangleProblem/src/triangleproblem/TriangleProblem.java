@@ -5,11 +5,10 @@
  */
 package triangleproblem;
 
-import java.util.*;
 import java.io.*;
 /**
  *
- * @author Karen
+ * @author 
  */
 public class TriangleProblem {
 
