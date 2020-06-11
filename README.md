@@ -21,3 +21,6 @@
 ## Specification
 - Running using Eclipse 
 - Have JUnit
+
+## Ejecution
+![Ejecution](https://github.com/kbermude/Taller1_Software/blob/master/Documentation/Ejecution_SS.jpg)
