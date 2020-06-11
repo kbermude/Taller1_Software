@@ -29,7 +29,11 @@ public class TriangleTester {
 			System.out.println("\n\n>>>>>Initializing test case #"+i);
 			System.out.println("Values: a="+a+" b="+b+" c="+c);
 			try {
-			TriangleProblem.checkInputs(Integer.parseInt (a),Integer.parseInt (b),Integer.parseInt (c));
+				boolean inputsValid = TriangleProblem.checkInputs(Integer.parseInt (a),Integer.parseInt (b),Integer.parseInt (c));
+
+				if (!inputsValid) {
+					throw new Exception("Bad inputs given, program would not continue!");
+				}
 
 	        System.out.println ("Side a is ");
 	        System.out.println (a);
