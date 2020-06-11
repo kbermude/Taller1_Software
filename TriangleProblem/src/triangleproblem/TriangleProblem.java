@@ -17,15 +17,16 @@ public class TriangleProblem {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException{
-       DataInputStream stdin = new DataInputStream (System.in);
-        boolean c1=true;
-        boolean c2=true;
-        boolean c3=true;
+      //DataInputStream stdin = new DataInputStream (System.in);
+      BufferedReader stdin= new BufferedReader(new InputStreamReader(System.in));
+        boolean c1=false;
+        boolean c2=false;
+        boolean c3=false;
         int a=1;
         int b=1;
         int c=1;
   
-        while (c1&c2&c3) {
+        while (!c1&!c2&!c3) {
 
             // Sides of triangle.
             System.out.println ("\nEnter side1 length: ");
@@ -62,9 +63,8 @@ public class TriangleProblem {
         boolean tr=(a<b+c)&(b<a+c)&(c<a+b);
         System.out.println (tr);
         String type="";
-        System.out.println(tr);
         if (tr){
-            if(a!=b & b==c){
+            if(a==b & b==c){
                type="Equilateral";
             }
             else if (a!=b & a!=c & b!=c){
@@ -77,8 +77,7 @@ public class TriangleProblem {
         else{
             type="Not a triangle";
         }
-        System.out.println (type);    
-             
+        System.out.println (type);           
     }
     
 }
